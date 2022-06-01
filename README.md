@@ -52,3 +52,6 @@ run: docker run --env-file .env -p 1234:8000 mkush/drf_firebase:v1.0 <br />
 visit localhost:1234
 
 
+
+
+
