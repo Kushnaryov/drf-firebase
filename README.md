@@ -20,11 +20,13 @@ FIREBASE_CLIENT_EMAIL= <"client_email"> <br />
 FIREBASE_CLIENT_ID= <"client_id"> <br />
 FIREBASE_CLIENT_CERT_URL= <"client_x509_cert_url"> <br />
 
-run:    python manage.py makemigrations <br />
-        python manage.py migrate <br />
-        python manage.py createsuperuser <br />
-        ... <br />
-        python manage.py runserver <br />
+then run:
+pip install -r requerements.txt (inside virtualenv)
+python manage.py makemigrations <br />
+python manage.py migrate <br />
+python manage.py createsuperuser <br />
+... <br />
+python manage.py runserver <br />
 
 visit localhost:8000
 ### Run template via docker:
