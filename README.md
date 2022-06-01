@@ -13,41 +13,41 @@ To run it on local machine you should provide auth configs from your firebase ap
 
 Add to environment variables values from firebase auth config:
 
-FIREBASE_PROJECT_ID= <"project_id">
-FIREBASE_PRIVATE_KEY_ID= <"private_key_id">
-FIREBASE_PRIVATE_KEY= <"private_key">
-FIREBASE_CLIENT_EMAIL= <"client_email">
-FIREBASE_CLIENT_ID= <"client_id">
-FIREBASE_CLIENT_CERT_URL= <"client_x509_cert_url">
+FIREBASE_PROJECT_ID= <"project_id"> <br />
+FIREBASE_PRIVATE_KEY_ID= <"private_key_id"> <br />
+FIREBASE_PRIVATE_KEY= <"private_key"> <br />
+FIREBASE_CLIENT_EMAIL= <"client_email"> <br />
+FIREBASE_CLIENT_ID= <"client_id"> <br />
+FIREBASE_CLIENT_CERT_URL= <"client_x509_cert_url"> <br />
 
-run:    python manage.py makemigrations
-        python manage.py migrate
-        python manage.py createsuperuser
-        ...
-        python manage.py runserver
+run:    python manage.py makemigrations <br />
+        python manage.py migrate <br />
+        python manage.py createsuperuser <br />
+        ... <br />
+        python manage.py runserver <br />
 
 visit localhost:8000
 ### Run template via docker:
 
-Create .env file in your root directory:
+Create .env file in your root directory: <br />
 
-Fill it up with template:
+Fill it up with template: <br />
 
-DJANGO_DB_NAME=<"your_db_name">
-DJANGO_SU_NAME=<"your_superusername_name">
-DJANGO_SU_EMAIL=<"your_superuser_email">
-DJANGO_SU_PASSWORD=<"your_superuser_password">
+DJANGO_DB_NAME=<"your_db_name"> <br />
+DJANGO_SU_NAME=<"your_superusername_name"> <br />
+DJANGO_SU_EMAIL=<"your_superuser_email"> <br />
+DJANGO_SU_PASSWORD=<"your_superuser_password"> <br />
 
-FIREBASE_PROJECT_ID= <"project_id">
-FIREBASE_PRIVATE_KEY_ID= <"private_key_id">
-FIREBASE_PRIVATE_KEY= <"private_key">
-FIREBASE_CLIENT_EMAIL= <"client_email">
-FIREBASE_CLIENT_ID= <"client_id">
-FIREBASE_CLIENT_CERT_URL= <"client_x509_cert_url">
+FIREBASE_PROJECT_ID= <"project_id"> <br />
+FIREBASE_PRIVATE_KEY_ID= <"private_key_id"> <br />
+FIREBASE_PRIVATE_KEY= <"private_key"> <br />
+FIREBASE_CLIENT_EMAIL= <"client_email"> <br />
+FIREBASE_CLIENT_ID= <"client_id"> <br />
+FIREBASE_CLIENT_CERT_URL= <"client_x509_cert_url"> <br />
 
 
-run: docker pull mkush/drf_firabase:v1.0
-run: docker run --env-file .env -p 1234:8000 mkush/drf_firebase:v1.0
+run: docker pull mkush/drf_firabase:v1.0 <br />
+run: docker run --env-file .env -p 1234:8000 mkush/drf_firebase:v1.0 <br />
 
 visit localhost:1234
 
